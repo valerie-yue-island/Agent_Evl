@@ -1,0 +1,17 @@
+[project]
+name = "agent-evl"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "dengyue0", email = "55765149+yuedeng1998@users.noreply.github.com" }
+]
+requires-python = ">=3.8"
+dependencies = []
+
+[project.scripts]
+agent-evl = "agent_evl:main"
+
+[build-system]
+requires = ["uv_build>=0.13.0,<0.14.0"]
+build-backend = "uv_build"

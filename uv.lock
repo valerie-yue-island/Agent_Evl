@@ -1,0 +1,14 @@
+version = 1
+revision = 5
+requires-python = ">=3.8"
+resolution-markers = [
+    "python_full_version >= '3.12' and sys_platform == 'emscripten'",
+    "(python_full_version >= '3.10' and python_full_version < '3.12') or (python_full_version >= '3.10' and sys_platform != 'emscripten')",
+    "python_full_version == '3.9.*'",
+    "python_full_version < '3.9'",
+]
+
+[[package]]
+name = "agent-evl"
+version = "0.1.0"
+source = { editable = "." }
