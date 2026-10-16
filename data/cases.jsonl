@@ -1,0 +1,5 @@
+{"id": "create_basic", "today": "2026-10-15", "utterance": "明天要写周报，很重要", "initial_tasks": [], "expected_tasks": [{"title": "写周报", "planned_date": "2026-10-16", "important": true, "progress": 0}]}
+{"id": "update_progress", "today": "2026-10-15", "utterance": "周报写了一半了", "initial_tasks": [{"id": 1, "title": "写周报", "progress": 0}], "expected_tasks": [{"title": "写周报", "progress": 50}]}
+{"id": "done_with_note", "today": "2026-10-15", "utterance": "健身做完了，今天练了腿", "initial_tasks": [{"id": 1, "title": "健身", "progress": 0}], "expected_tasks": [{"title": "健身", "progress": 100, "notes_contain": "腿"}]}
+{"id": "multi_intent", "today": "2026-10-15", "utterance": "邮件回完了，另外后天要去拿快递", "initial_tasks": [{"id": 1, "title": "回邮件", "progress": 0}], "expected_tasks": [{"title": "回邮件", "progress": 100}, {"title": "拿快递", "planned_date": "2026-10-17"}]}
+{"id": "no_action", "today": "2026-10-15", "utterance": "今天好累啊", "initial_tasks": [{"id": 1, "title": "写周报", "progress": 0}], "expected_tasks": [{"title": "写周报", "progress": 0}]}
